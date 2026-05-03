@@ -1,7 +1,11 @@
 import ProductCard from "@/components/ProductCard";
 import Link from "next/link";
+import { products } from "@/data/products";
 
 export default function Home() {
+  // Grab a few specific products for featured sections
+  const featuredProducts = products.slice(0, 3); // Just grabbing first 3 for demo
+
   return (
     <div>
       {/* Hero Section */}
@@ -17,7 +21,7 @@ export default function Home() {
               Modular, foldable, and sustainable furniture tailored for compact Indian homes. Elevate your living with eco-luxury aesthetics.
             </p>
             <div className="hero-actions">
-              <Link href="#shop" className="btn-primary">Shop Collection</Link>
+              <Link href="/products" className="btn-primary">Shop Collection</Link>
               <Link href="/about" className="btn-secondary">Our Story</Link>
             </div>
           </div>
@@ -65,30 +69,20 @@ export default function Home() {
             <p className="text-lead">Discover our best-selling space savers.</p>
           </div>
           <div className="products-grid">
-            <ProductCard 
-              id="foldable-desk-1"
-              name="Origami Foldable Desk"
-              price={4500}
-              imageUrl="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&q=80"
-              category="Workspaces"
-              ecoScore={9}
-            />
-            <ProductCard 
-              id="modular-shelf-1"
-              name="Tetris Modular Bookshelf"
-              price={8500}
-              imageUrl="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=800&q=80"
-              category="Storage"
-              ecoScore={8}
-            />
-            <ProductCard 
-              id="bed-organizer-1"
-              name="Under-bed Eco Storage Box"
-              price={2200}
-              imageUrl="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80"
-              category="Organizers"
-              ecoScore={10}
-            />
+            {featuredProducts.map(product => (
+              <ProductCard 
+                key={product.id}
+                id={product.id}
+                name={product.name}
+                price={product.price}
+                imageUrl={product.imageUrl}
+                category={product.category}
+                ecoScore={product.ecoScore}
+              />
+            ))}
+          </div>
+          <div style={{ textAlign: "center", marginTop: "3rem" }}>
+            <Link href="/products" className="btn-secondary">View All 20+ Products</Link>
           </div>
         </div>
       </section>
