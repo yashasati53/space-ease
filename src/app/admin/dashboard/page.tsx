@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import '../admin.css'; // Import specific admin styles
+import '../../admin.css'; // Import specific admin styles
 
 export default function AdminDashboard() {
   return (
