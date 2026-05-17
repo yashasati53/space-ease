@@ -40,7 +40,7 @@ export default function Home() {
         />
         <div className="hero-overlay">
           <div className="hero-content">
-            <span className="hero-tag">New Collection 2025</span>
+            <span className="hero-tag">New Collection 2026</span>
             <h1 className="heading-xl hero-title">
               Space is luxury.<br />Design makes it accessible.
             </h1>
