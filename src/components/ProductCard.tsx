@@ -11,10 +11,9 @@ interface ProductCardProps {
   price: number;
   imageUrl: string;
   category: string;
-  ecoScore: number;
 }
 
-export default function ProductCard({ id, name, price, imageUrl, category, ecoScore }: ProductCardProps) {
+export default function ProductCard({ id, name, price, imageUrl, category }: ProductCardProps) {
   const { addToCart } = useCart();
   const [added, setAdded] = useState(false);
 
@@ -30,9 +29,6 @@ export default function ProductCard({ id, name, price, imageUrl, category, ecoSc
       {/* Image */}
       <Link href={`/product/${id}`} className="product-image-container">
         <Image src={imageUrl} alt={name} fill className="product-image" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" />
-        {ecoScore >= 9 && (
-          <div className="eco-badge">Eco ✓</div>
-        )}
       </Link>
 
       {/* Info */}

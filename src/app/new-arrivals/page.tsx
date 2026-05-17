@@ -71,7 +71,6 @@ export default function NewArrivalsPage() {
             price={product.price}
             imageUrl={product.imageUrl}
             category={product.category}
-            ecoScore={product.ecoScore}
           />
         ))}
       </div>

@@ -11,7 +11,6 @@ export interface Product {
   price: number;
   imageUrl: string;
   category: Category;
-  ecoScore: number;
   description: string;
   stock: number;
 }
@@ -24,7 +23,6 @@ export const products: Product[] = [
     price: 1200,
     imageUrl: "/foldable-storage-box.jpg",
     category: "Space Organization",
-    ecoScore: 9,
     description: "Versatile foldable storage box ideal for keeping your bedroom and closet organized.",
     stock: 45
   },
@@ -34,7 +32,6 @@ export const products: Product[] = [
     price: 850,
     imageUrl: "/drawer-organizer.jpg",
     category: "Space Organization",
-    ecoScore: 8,
     description: "A compact drawer organizer set to neatly separate your accessories and essentials.",
     stock: 60
   },
@@ -44,7 +41,6 @@ export const products: Product[] = [
     price: 1500,
     imageUrl: "/wardrobe-basket.jpg",
     category: "Space Organization",
-    ecoScore: 9,
     description: "Sturdy fabric storage baskets designed to fit perfectly on your wardrobe shelves.",
     stock: 30
   },
@@ -54,7 +50,6 @@ export const products: Product[] = [
     price: 2500,
     imageUrl: "/shoe-rack.jpg",
     category: "Space Organization",
-    ecoScore: 8,
     description: "Space-saving multi-tier shoe rack for the modern entryway.",
     stock: 25
   },
@@ -66,7 +61,6 @@ export const products: Product[] = [
     price: 3200,
     imageUrl: "/minimal-wall-art.jpg",
     category: "Home Décor",
-    ecoScore: 9,
     description: "Elegant abstract minimal wall art to elevate your living room aesthetic.",
     stock: 15
   },
@@ -76,7 +70,6 @@ export const products: Product[] = [
     price: 1800,
     imageUrl: "/ceramic-vase.jpg",
     category: "Home Décor",
-    ecoScore: 10,
     description: "Handcrafted matte ceramic vase, perfect for dried florals or as a standalone piece.",
     stock: 20
   },
@@ -86,7 +79,6 @@ export const products: Product[] = [
     price: 950,
     imageUrl: "/scented-candle.jpg",
     category: "Home Décor",
-    ecoScore: 9,
     description: "Natural soy wax scented candle with soothing essential oils.",
     stock: 50
   },
@@ -96,7 +88,6 @@ export const products: Product[] = [
     price: 4500,
     imageUrl: "/decorative-mirror.jpg",
     category: "Home Décor",
-    ecoScore: 7,
     description: "A minimalist round decorative mirror that adds depth and light to any small space.",
     stock: 10
   },
@@ -108,7 +99,6 @@ export const products: Product[] = [
     price: 6500,
     imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80",
     category: "Furniture",
-    ecoScore: 8,
     description: "A sleek, compact study table that fits easily into tight apartment corners.",
     stock: 12
   },
@@ -118,7 +108,6 @@ export const products: Product[] = [
     price: 3800,
     imageUrl: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80",
     category: "Furniture",
-    ecoScore: 9,
     description: "A comfortable seating ottoman with a hidden storage compartment.",
     stock: 18
   },
@@ -128,7 +117,6 @@ export const products: Product[] = [
     price: 2800,
     imageUrl: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=80",
     category: "Furniture",
-    ecoScore: 8,
     description: "Minimalist side table for your living room or bedroom.",
     stock: 22
   },
@@ -138,7 +126,6 @@ export const products: Product[] = [
     price: 5500,
     imageUrl: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80",
     category: "Furniture",
-    ecoScore: 9,
     description: "Build-it-yourself modular shelving unit for displaying books and decor.",
     stock: 8
   },
@@ -150,7 +137,6 @@ export const products: Product[] = [
     price: 1500,
     imageUrl: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=80",
     category: "Workspace Essentials",
-    ecoScore: 8,
     description: "Energy-efficient LED desk lamp with adjustable brightness.",
     stock: 35
   },
@@ -160,7 +146,6 @@ export const products: Product[] = [
     price: 1200,
     imageUrl: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80",
     category: "Workspace Essentials",
-    ecoScore: 10,
     description: "Ergonomic aluminum laptop stand to improve your working posture.",
     stock: 40
   },
@@ -170,7 +155,6 @@ export const products: Product[] = [
     price: 850,
     imageUrl: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=800&q=80",
     category: "Workspace Essentials",
-    ecoScore: 9,
     description: "Keep your pens, notes, and accessories tidy with this sleek organizer.",
     stock: 50
   },
@@ -180,7 +164,6 @@ export const products: Product[] = [
     price: 9500,
     imageUrl: "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=800&q=80",
     category: "Workspace Essentials",
-    ecoScore: 7,
     description: "Highly adjustable ergonomic chair for long hours of comfortable work.",
     stock: 15
   },
@@ -192,7 +175,6 @@ export const products: Product[] = [
     price: 1400,
     imageUrl: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80",
     category: "Bathroom Organizer",
-    ecoScore: 8,
     description: "Multi-purpose bathroom organizer caddy for your toiletries.",
     stock: 25
   },
@@ -202,7 +184,6 @@ export const products: Product[] = [
     price: 1100,
     imageUrl: "https://images.unsplash.com/photo-1556909190-eccf4d361251?auto=format&fit=crop&w=800&q=80",
     category: "Bathroom Organizer",
-    ecoScore: 9,
     description: "Elegant refillable soap and lotion dispenser set.",
     stock: 30
   },
@@ -212,7 +193,6 @@ export const products: Product[] = [
     price: 2200,
     imageUrl: "/Bathroom storage shelf.jpeg",
     category: "Bathroom Organizer",
-    ecoScore: 9,
     description: "Wall-mounted storage shelf designed for compact bathrooms.",
     stock: 20
   },
@@ -222,7 +202,6 @@ export const products: Product[] = [
     price: 1800,
     imageUrl: "/Bath towel set.jpeg",
     category: "Bathroom Organizer",
-    ecoScore: 10,
     description: "Plush, ultra-absorbent bath towel set made from organic cotton.",
     stock: 35
   }
@@ -235,3 +214,4 @@ export const getProductsByCategory = (category: Category) => {
 export const getProductById = (id: string) => {
   return products.find(p => p.id === id);
 };
+

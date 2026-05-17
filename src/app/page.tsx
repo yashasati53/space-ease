@@ -132,7 +132,6 @@ export default function Home() {
                 price={product.price}
                 imageUrl={product.imageUrl}
                 category={product.category}
-                ecoScore={product.ecoScore}
               />
             ))}
           </div>

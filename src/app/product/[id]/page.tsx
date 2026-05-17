@@ -33,15 +33,6 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
         {/* Left — Image */}
         <div style={{ position: "relative", aspectRatio: "3/4", overflow: "hidden", backgroundColor: "#f5f5f5" }}>
           <Image src={product.imageUrl} alt={product.name} fill style={{ objectFit: "cover" }} sizes="50vw" />
-          {product.ecoScore >= 9 && (
-            <div style={{
-              position: "absolute", bottom: "1rem", left: "1rem",
-              background: "#fff", color: "#000", padding: "0.25rem 0.6rem",
-              fontSize: "0.72rem", letterSpacing: "0.04em", border: "1px solid #e0e0e0",
-            }}>
-              Eco ✓
-            </div>
-          )}
         </div>
 
         {/* Right — Details */}
