@@ -21,7 +21,7 @@ export default function AdminDashboard() {
       <main className="admin-main">
         <div className="dashboard-header">
           <h1 className="heading-md">Operations & KPI Overview</h1>
-          <button className="btn-primary">Generate Report</button>
+          <Link href="/mock" className="btn-primary" style={{ display: "inline-block", textAlign: "center", textDecoration: "none" }}>Generate Report</Link>
         </div>
 
         {/* Business KPIs */}

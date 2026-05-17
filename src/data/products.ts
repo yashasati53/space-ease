@@ -1,9 +1,9 @@
 export type Category = 
-  | 'Storage organization'
-  | 'Bath Furnishings'
-  | 'Cutlery'
-  | 'Home decor & Accessories'
-  | 'Fragrance & wellness';
+  | 'Space Organization'
+  | 'Home Décor'
+  | 'Furniture'
+  | 'Workspace Essentials'
+  | 'Bathroom Organizer';
 
 export interface Product {
   id: string;
@@ -17,214 +17,214 @@ export interface Product {
 }
 
 export const products: Product[] = [
-  // Storage organization
+  // 1. Space Organization
   {
-    id: "st-1",
-    name: "Under-bed Eco Box",
-    price: 2200,
-    imageUrl: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
-    category: "Storage organization",
-    ecoScore: 10,
-    description: "Maximize your bedroom space with this low-profile, eco-friendly bamboo storage box.",
-    stock: 12
-  },
-  {
-    id: "st-2",
-    name: "Tetris Modular Bookshelf",
-    price: 8500,
-    imageUrl: "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=800&q=80",
-    category: "Storage organization",
-    ecoScore: 8,
-    description: "Build it your way. A modular shelving unit that adapts to any tight corner.",
-    stock: 5
-  },
-  {
-    id: "st-3",
-    name: "Hanging Closet Organizer",
-    price: 1500,
-    imageUrl: "https://images.unsplash.com/photo-1582736183427-4a17cdedb16a?auto=format&fit=crop&w=800&q=80",
-    category: "Storage organization",
+    id: "so-1",
+    name: "Foldable Storage Box",
+    price: 1200,
+    imageUrl: "/foldable-storage-box.jpg",
+    category: "Space Organization",
     ecoScore: 9,
-    description: "6-tier hanging shelves made from recycled ocean plastics.",
+    description: "Versatile foldable storage box ideal for keeping your bedroom and closet organized.",
     stock: 45
   },
   {
-    id: "st-4",
-    name: "Magnetic Key & Mail Rack",
-    price: 950,
-    imageUrl: "https://images.unsplash.com/photo-1601275225755-f6a6c1730cb1?auto=format&fit=crop&w=800&q=80",
-    category: "Storage organization",
-    ecoScore: 7,
-    description: "Sleek entryway organizer to never lose your keys again.",
+    id: "so-2",
+    name: "Drawer Organizer",
+    price: 850,
+    imageUrl: "/drawer-organizer.jpg",
+    category: "Space Organization",
+    ecoScore: 8,
+    description: "A compact drawer organizer set to neatly separate your accessories and essentials.",
+    stock: 60
+  },
+  {
+    id: "so-3",
+    name: "Wardrobe Storage Basket",
+    price: 1500,
+    imageUrl: "/wardrobe-basket.jpg",
+    category: "Space Organization",
+    ecoScore: 9,
+    description: "Sturdy fabric storage baskets designed to fit perfectly on your wardrobe shelves.",
     stock: 30
   },
-
-  // Bath Furnishings
   {
-    id: "bf-1",
-    name: "Bamboo Bath Caddy",
-    price: 3400,
-    imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
-    category: "Bath Furnishings",
-    ecoScore: 9,
-    description: "Expandable bamboo tray for the ultimate relaxing bath experience.",
-    stock: 18
-  },
-  {
-    id: "bf-2",
-    name: "Organic Cotton Towel Set",
-    price: 4500,
-    imageUrl: "https://images.unsplash.com/photo-1616627547584-bf28cee262db?auto=format&fit=crop&w=800&q=80",
-    category: "Bath Furnishings",
-    ecoScore: 10,
-    description: "Plush, ultra-absorbent towels woven from 100% organic cotton.",
-    stock: 22
-  },
-  {
-    id: "bf-3",
-    name: "Teak Wood Shower Mat",
-    price: 5200,
-    imageUrl: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80",
-    category: "Bath Furnishings",
+    id: "so-4",
+    name: "Shoe Rack",
+    price: 2500,
+    imageUrl: "/shoe-rack.jpg",
+    category: "Space Organization",
     ecoScore: 8,
-    description: "A spa-like, water-resistant teak mat that elevates your bathroom aesthetic.",
-    stock: 8
-  },
-  {
-    id: "bf-4",
-    name: "Ceramic Soap Dispenser",
-    price: 1200,
-    imageUrl: "https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=800&q=80",
-    category: "Bath Furnishings",
-    ecoScore: 9,
-    description: "Refillable matte ceramic dispenser to reduce single-use plastic.",
-    stock: 50
+    description: "Space-saving multi-tier shoe rack for the modern entryway.",
+    stock: 25
   },
 
-  // Cutlery
-  {
-    id: "ct-1",
-    name: "Minimalist Matte Black Set",
-    price: 3200,
-    imageUrl: "https://images.unsplash.com/photo-1593005856484-90a8a6498bd9?auto=format&fit=crop&w=800&q=80",
-    category: "Cutlery",
-    ecoScore: 8,
-    description: "24-piece stainless steel set with a scratch-resistant matte black finish.",
-    stock: 14
-  },
-  {
-    id: "ct-2",
-    name: "Bamboo Handle Cutlery",
-    price: 2800,
-    imageUrl: "https://images.unsplash.com/photo-1600857319985-79a81da144fb?auto=format&fit=crop&w=800&q=80",
-    category: "Cutlery",
-    ecoScore: 10,
-    description: "Eco-friendly dining set featuring sustainably sourced bamboo handles.",
-    stock: 20
-  },
-  {
-    id: "ct-3",
-    name: "Travel Cutlery Pouch",
-    price: 850,
-    imageUrl: "https://images.unsplash.com/photo-1576087532393-df818e6ce607?auto=format&fit=crop&w=800&q=80",
-    category: "Cutlery",
-    ecoScore: 10,
-    description: "Reusable wooden cutlery set with a canvas travel wrap.",
-    stock: 100
-  },
-  {
-    id: "ct-4",
-    name: "Gold Accent Serving Spoons",
-    price: 1800,
-    imageUrl: "https://images.unsplash.com/photo-1565151443690-0f2c41938561?auto=format&fit=crop&w=800&q=80",
-    category: "Cutlery",
-    ecoScore: 7,
-    description: "Elegant serving spoons designed for modern dining tables.",
-    stock: 12
-  },
-
-  // Home decor & Accessories
+  // 2. Home Décor
   {
     id: "hd-1",
-    name: "Terracotta Vase Trio",
-    price: 2400,
-    imageUrl: "https://images.unsplash.com/photo-1612152505322-b69c7da797cb?auto=format&fit=crop&w=800&q=80",
-    category: "Home decor & Accessories",
+    name: "Minimal Wall Art",
+    price: 3200,
+    imageUrl: "/minimal-wall-art.jpg",
+    category: "Home Décor",
     ecoScore: 9,
-    description: "Handcrafted earthen vases by artisans in Rajasthan.",
-    stock: 7
-  },
-  {
-    id: "hd-2",
-    name: "Macrame Wall Hanging",
-    price: 1600,
-    imageUrl: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=80",
-    category: "Home decor & Accessories",
-    ecoScore: 10,
-    description: "Add a bohemian touch with this handmade cotton macrame piece.",
+    description: "Elegant abstract minimal wall art to elevate your living room aesthetic.",
     stock: 15
   },
   {
+    id: "hd-2",
+    name: "Ceramic Vase",
+    price: 1800,
+    imageUrl: "/ceramic-vase.jpg",
+    category: "Home Décor",
+    ecoScore: 10,
+    description: "Handcrafted matte ceramic vase, perfect for dried florals or as a standalone piece.",
+    stock: 20
+  },
+  {
     id: "hd-3",
-    name: "Minimalist Wall Clock",
-    price: 3100,
-    imageUrl: "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=800&q=80",
-    category: "Home decor & Accessories",
-    ecoScore: 7,
-    description: "Silent sweep wooden wall clock with a sleek, frameless design.",
-    stock: 9
+    name: "Scented Candle",
+    price: 950,
+    imageUrl: "/scented-candle.jpg",
+    category: "Home Décor",
+    ecoScore: 9,
+    description: "Natural soy wax scented candle with soothing essential oils.",
+    stock: 50
   },
   {
     id: "hd-4",
-    name: "Recycled Glass Centerpiece",
-    price: 2900,
-    imageUrl: "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&fit=crop&w=800&q=80",
-    category: "Home decor & Accessories",
-    ecoScore: 10,
-    description: "A stunning table centerpiece blown from 100% recycled glass.",
-    stock: 6
+    name: "Decorative Mirror",
+    price: 4500,
+    imageUrl: "/decorative-mirror.jpg",
+    category: "Home Décor",
+    ecoScore: 7,
+    description: "A minimalist round decorative mirror that adds depth and light to any small space.",
+    stock: 10
   },
 
-  // Fragrance & wellness
+  // 3. Furniture
   {
-    id: "fw-1",
-    name: "Sandalwood Soy Candle",
-    price: 1100,
-    imageUrl: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80",
-    category: "Fragrance & wellness",
+    id: "fu-1",
+    name: "Compact Study Table",
+    price: 6500,
+    imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80",
+    category: "Furniture",
+    ecoScore: 8,
+    description: "A sleek, compact study table that fits easily into tight apartment corners.",
+    stock: 12
+  },
+  {
+    id: "fu-2",
+    name: "Storage Ottoman",
+    price: 3800,
+    imageUrl: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80",
+    category: "Furniture",
     ecoScore: 9,
-    description: "Hand-poured soy wax candle infused with pure Mysore sandalwood.",
+    description: "A comfortable seating ottoman with a hidden storage compartment.",
+    stock: 18
+  },
+  {
+    id: "fu-3",
+    name: "Side Table",
+    price: 2800,
+    imageUrl: "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=80",
+    category: "Furniture",
+    ecoScore: 8,
+    description: "Minimalist side table for your living room or bedroom.",
+    stock: 22
+  },
+  {
+    id: "fu-4",
+    name: "Modular Shelf",
+    price: 5500,
+    imageUrl: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80",
+    category: "Furniture",
+    ecoScore: 9,
+    description: "Build-it-yourself modular shelving unit for displaying books and decor.",
+    stock: 8
+  },
+
+  // 4. Workspace Essentials
+  {
+    id: "we-1",
+    name: "LED Desk Lamp",
+    price: 1500,
+    imageUrl: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=80",
+    category: "Workspace Essentials",
+    ecoScore: 8,
+    description: "Energy-efficient LED desk lamp with adjustable brightness.",
+    stock: 35
+  },
+  {
+    id: "we-2",
+    name: "Laptop Stand",
+    price: 1200,
+    imageUrl: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=800&q=80",
+    category: "Workspace Essentials",
+    ecoScore: 10,
+    description: "Ergonomic aluminum laptop stand to improve your working posture.",
     stock: 40
   },
   {
-    id: "fw-2",
-    name: "Ceramic Essential Oil Diffuser",
-    price: 3500,
-    imageUrl: "https://images.unsplash.com/photo-1602928321679-560bb453f190?auto=format&fit=crop&w=800&q=80",
-    category: "Fragrance & wellness",
-    ecoScore: 8,
-    description: "Ultrasonic diffuser with a matte ceramic cover, acts as decor and wellness tool.",
-    stock: 11
+    id: "we-3",
+    name: "Desk Organizer",
+    price: 850,
+    imageUrl: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=800&q=80",
+    category: "Workspace Essentials",
+    ecoScore: 9,
+    description: "Keep your pens, notes, and accessories tidy with this sleek organizer.",
+    stock: 50
   },
   {
-    id: "fw-3",
-    name: "Himalayan Salt Lamp",
-    price: 1800,
-    imageUrl: "https://images.unsplash.com/photo-1526364005436-b631d8e1c667?auto=format&fit=crop&w=800&q=80",
-    category: "Fragrance & wellness",
-    ecoScore: 9,
-    description: "Natural salt crystal lamp that emits a warm, ambient glow.",
+    id: "we-4",
+    name: "Ergonomic Chair",
+    price: 9500,
+    imageUrl: "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=800&q=80",
+    category: "Workspace Essentials",
+    ecoScore: 7,
+    description: "Highly adjustable ergonomic chair for long hours of comfortable work.",
+    stock: 15
+  },
+
+  // 6. Bathroom Organizer
+  {
+    id: "bo-1",
+    name: "Bathroom Organizer",
+    price: 1400,
+    imageUrl: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80",
+    category: "Bathroom Organizer",
+    ecoScore: 8,
+    description: "Multi-purpose bathroom organizer caddy for your toiletries.",
     stock: 25
   },
   {
-    id: "fw-4",
-    name: "Organic Incense Bundle",
-    price: 600,
-    imageUrl: "https://images.unsplash.com/photo-1608670577054-946e382d5e23?auto=format&fit=crop&w=800&q=80",
-    category: "Fragrance & wellness",
+    id: "bo-2",
+    name: "Soap Dispenser Set",
+    price: 1100,
+    imageUrl: "https://images.unsplash.com/photo-1556909190-eccf4d361251?auto=format&fit=crop&w=800&q=80",
+    category: "Bathroom Organizer",
+    ecoScore: 9,
+    description: "Elegant refillable soap and lotion dispenser set.",
+    stock: 30
+  },
+  {
+    id: "bo-3",
+    name: "Bathroom Storage Shelf",
+    price: 2200,
+    imageUrl: "https://images.unsplash.com/photo-1564540583246-934409427776?auto=format&fit=crop&w=800&q=80",
+    category: "Bathroom Organizer",
+    ecoScore: 9,
+    description: "Wall-mounted storage shelf designed for compact bathrooms.",
+    stock: 20
+  },
+  {
+    id: "bo-4",
+    name: "Bath Towel Set",
+    price: 1800,
+    imageUrl: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+    category: "Bathroom Organizer",
     ecoScore: 10,
-    description: "Set of 5 organic incense varieties, chemical-free and ethically sourced.",
-    stock: 80
+    description: "Plush, ultra-absorbent bath towel set made from organic cotton.",
+    stock: 35
   }
 ];
 
