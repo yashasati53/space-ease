@@ -132,6 +132,7 @@ export default function Home() {
                 price={product.price}
                 imageUrl={product.imageUrl}
                 category={product.category}
+                originalPrice={product.originalPrice}
               />
             ))}
           </div>

@@ -13,6 +13,7 @@ export interface Product {
   category: Category;
   description: string;
   stock: number;
+  originalPrice?: number;
 }
 
 export const products: Product[] = [
@@ -199,7 +200,8 @@ export const products: Product[] = [
   {
     id: "bo-4",
     name: "Bath Towel Set",
-    price: 1800,
+    price: 1440,
+    originalPrice: 1800,
     imageUrl: "/Bath towel set.jpeg",
     category: "Bathroom Organizer",
     description: "Plush, ultra-absorbent bath towel set made from organic cotton.",

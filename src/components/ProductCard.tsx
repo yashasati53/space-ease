@@ -11,9 +11,10 @@ interface ProductCardProps {
   price: number;
   imageUrl: string;
   category: string;
+  originalPrice?: number;
 }
 
-export default function ProductCard({ id, name, price, imageUrl, category }: ProductCardProps) {
+export default function ProductCard({ id, name, price, imageUrl, category, originalPrice }: ProductCardProps) {
   const { addToCart } = useCart();
   const [added, setAdded] = useState(false);
 
@@ -35,7 +36,14 @@ export default function ProductCard({ id, name, price, imageUrl, category }: Pro
       <div className="product-info">
         <div className="product-meta">
           <span className="product-category">{category}</span>
-          <span className="product-price">₹{price.toLocaleString('en-IN')}</span>
+          <span className="product-price">
+            {originalPrice && (
+              <span style={{ textDecoration: 'line-through', color: '#a0a0a0', marginRight: '0.5rem', fontSize: '0.85em' }}>
+                ₹{originalPrice.toLocaleString('en-IN')}
+              </span>
+            )}
+            ₹{price.toLocaleString('en-IN')}
+          </span>
         </div>
         <h3 className="product-name">
           <Link href={`/product/${id}`}>{name}</Link>

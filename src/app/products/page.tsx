@@ -38,6 +38,7 @@ export default function ProductsPage() {
                 price={product.price}
                 imageUrl={product.imageUrl}
                 category={product.category}
+                originalPrice={product.originalPrice}
               />
             ))}
           </div>

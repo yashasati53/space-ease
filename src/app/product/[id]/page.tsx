@@ -44,6 +44,11 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
             {product.name}
           </h1>
           <p style={{ fontSize: "1.1rem", fontWeight: 400, marginBottom: "2rem", color: "#000" }}>
+            {product.originalPrice && (
+              <span style={{ textDecoration: 'line-through', color: '#a0a0a0', marginRight: '0.75rem', fontSize: '0.9em' }}>
+                ₹{product.originalPrice.toLocaleString('en-IN')}
+              </span>
+            )}
             ₹{product.price.toLocaleString("en-IN")}
           </p>
 
