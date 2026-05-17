@@ -220,7 +220,7 @@ export const products: Product[] = [
     id: "bo-4",
     name: "Bath Towel Set",
     price: 1800,
-    imageUrl: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "/Bath towel set.jpeg",
     category: "Bathroom Organizer",
     ecoScore: 10,
     description: "Plush, ultra-absorbent bath towel set made from organic cotton.",
