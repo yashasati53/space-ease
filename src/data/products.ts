@@ -210,7 +210,7 @@ export const products: Product[] = [
     id: "bo-3",
     name: "Bathroom Storage Shelf",
     price: 2200,
-    imageUrl: "https://images.unsplash.com/photo-1564540583246-934409427776?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "/Bathroom storage shelf.jpeg",
     category: "Bathroom Organizer",
     ecoScore: 9,
     description: "Wall-mounted storage shelf designed for compact bathrooms.",
