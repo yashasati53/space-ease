@@ -16,7 +16,7 @@ export default function NewArrivalsPage() {
         marginBottom: "3rem",
       }}>
         <p style={{ fontSize: "0.72rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "#737373", marginBottom: "0.75rem" }}>
-          Spring / Summer 2025
+          Spring / Summer 2026
         </p>
         <h1 style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)", fontWeight: 100, lineHeight: 1.05, marginBottom: "1rem" }}>
           New Arrivals
